@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es6",  // o codigo ts sera traduzido para ecmascript6
+        "outDir": "app/js", // saida do codigo ts compilado para js
+        "noEmitOnError": true, // essa configuracao nao permite compilar o codigo em ts com erros
+        "noImplicitAny": true // faz o compilador nao adotar variavel do tipo any por padrao
+    },
+    "include": [       // diretorio onde o compilador vai buscar os codigos ts para compilar
+        "app/ts/**/*"
+    ]
+}

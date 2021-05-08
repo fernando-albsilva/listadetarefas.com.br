@@ -1,0 +1,24 @@
+{
+  "name": "listadetarefas.com.br",
+  "version": "1.0.0",
+  "description": "Projeto lista de tarefas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "start": "tsc -w"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernando-albsilva/app_lista_de_tarefas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernando-albsilva/app_lista_de_tarefas/issues"
+  },
+  "homepage": "https://github.com/fernando-albsilva/app_lista_de_tarefas#readme",
+  "dependencies": {
+    "typescript": "^4.2.4"
+  }
+}

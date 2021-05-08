@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lista de Tarefas, Lista de tarefas online, tarefas, cronometro de tarefas, marcador tempo tarefa">
+    <meta name="keywords" content="lista; lista de tarefas; lista de tarefas online; cronometro tarefas; marcador de tempo de tarefas; to do list" >
+    <link rel="shortcut icon" type="image/x-icon" href="app/images/favicon.png">
+    <meta name="robots" content="index, follow" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="app/css/reset.css">
+    <link rel="stylesheet" href="app/css/main.css">
+</head>
+
+<body>
+    <div id="containerHeader">
+        <header>
+            <img id="logoImg" src="app/images/Lista_de_Tarefas.png" alt="Logo">
+            <div id="contatoContainer">
+                <label class="labelContato">
+                    <img class="contatoImg" src="app/images/email.png" alt="e-mail">   
+                    <h1 class="textoContato">fernando.albsilva@gmail.com</h1>
+                </label>
+                <label class="labelContato">
+                    <img class="contatoImg" src="app/images/copyRightfernando.png" alt="Copy-rights">
+                    <h1 class="textoContato">Fernando Albuquerque</h1>
+                </label>
+            </div>
+        </header>
+    </div>
+    
+    <div id="containerMain">
+
+        <div id="containerFormIsercaoTarefaEexcplicao">
+            <form id="formInsercaoTarefa">
+
+                <div id="containerInputNomePrioridade">
+                    <label>
+                        <p class="textoForm">Nome Tarefa:</p>
+                        <input class="inputText" type="text" id="nomeTarefa" required>
+                    </label>
+
+                    <label>
+                        <p class="textoForm">Prioridade:</p>
+                        <input class="inputText" type="number" min="0" max="100" id="prioridadeTarefa" required>
+                    </label>
+                </div>
+
+                <label>
+                    <p class="textoForm">Descrição:</p>
+                    <textarea class="iputTextArea" type="text" id="descricaoTarefa" maxlength="300" rows="5" cols="60"
+                        style="resize: none" required></textarea>
+                </label>
+
+                <input class="botao adicionaTarefa" type="submit" value="Adiconar">
+
+            </form>
+
+            <div id="containerExplicacao">
+                <h1 class="textoForm">Explicação</h1>
+                <h1 id="relogioTarefa">
+                    <p class="pExplicacao">Simples lista de Tarefas:</p>
+                    <p class="pExplicacao">1. Adiciona uma Tarefa:</p>
+                    <p class="pExplicacao">2. A prioridade funciona como método de organizaçaõ onde o número 1 é que tem
+                        maior prioridade.</p>
+                    <p class="pExplicacao">3. Inicie a terafa para marcar o tempo dedicado a mesma</p>
+                    <p class="pExplicacao">4. Ao finalizar a tarefa ira para uma lista separada contendo todas as
+                        tarefas finalizadas.</p>
+                </h1>
+                <div id="popUpEditaItemDaLista"></div>
+            </div>
+        </div>
+
+        <div id="containerCentralizaLista">
+
+            <div id="containerListaDeTarefas"></div>
+
+        </div>
+
+
+
+        <div id="containerCentralizaListaTarefasConcluida">
+            <div id="containerListaDeTarefasConcluida"></div>
+        </div>
+
+    </div>
+
+
+    <script src="app/js/model/Tarefa.js"></script>
+    <script src="app/js/view/ListaDeTarefaView.js"></script>
+    <script src="app/js/view/PopUpEdicaoView.js"></script>
+    <script src="app/js/view/InformacaoView.js"></script>
+    <script src="app/js/control/TarefaController.js"></script>
+    <script src="app/js/app.js"></script>
+
+</body>
+
+</html>
